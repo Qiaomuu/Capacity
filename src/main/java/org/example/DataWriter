@@ -1,0 +1,13 @@
+public class DataWriter {
+    public void write(String fileName, HashMap<String, LinkedHashMap<String,Integer>> map) {
+        //创建一个工作簿；
+        XSSFWorkbook wb = new XSSFWorkbook();
+        //创建一个工作表；
+        XSSFSheet sheet = wb.createSheet("Sheet1");
+        //表头
+        Row head = sheet.createRow(0);
+        Cell cell0 = head.createCell(0);
+        cell0.setCellValue("编码");
+
+    }
+}
